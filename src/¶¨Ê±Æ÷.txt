@@ -1,0 +1,19 @@
+<bean id="msgActivity" class="org.springframework.scheduling.quartz.JobDetailBean">
+		<property name="jobClass">
+			<value>common.msg.util.MsgActivityTimer</value>
+		</property>
+		<property name="applicationContextJobDataKey" value="applicationContext"></property>
+	</bean>
+	<bean id="msgClock" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+	   	<property name="jobDetail">
+	    	<ref bean="msgActivity"></ref>
+	   	</property>
+   		<property name="repeatInterval">
+   			<value>180000</value> 
+   		</property>
+   	 </bean>   	 
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	   <property name="triggers">
+	   		<list><ref bean="msgClock"></ref></list>
+	   </property>
+	</bean>
