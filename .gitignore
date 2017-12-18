@@ -27,6 +27,6 @@ hs_err_pid*
 .idea/
 cmpp2.iml
 logs/
-src/MsgConfig.properties
 lib/
 out/
+MsgConfig-prod.properties
