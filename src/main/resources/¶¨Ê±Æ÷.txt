@@ -1,6 +1,6 @@
 <bean id="msgActivity" class="org.springframework.scheduling.quartz.JobDetailBean">
 		<property name="jobClass">
-			<value>common.msg.util.MsgActivityTimer</value>
+			<value>MsgActivityTimer</value>
 		</property>
 		<property name="applicationContextJobDataKey" value="applicationContext"></property>
 	</bean>

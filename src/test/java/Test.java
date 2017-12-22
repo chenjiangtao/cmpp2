@@ -1,5 +1,4 @@
-import common.msg.util.MsgContainer;
-
+import com.smspai.sms.util.MsgContainer;
 
 public class Test {
 
