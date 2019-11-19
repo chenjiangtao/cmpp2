@@ -28,3 +28,4 @@ hs_err_pid*
 *.iml
 logs/
 MsgConfig-prod.properties
+target/
